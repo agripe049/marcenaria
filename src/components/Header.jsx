@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Menu, Sparkles, X } from 'lucide-react'
+import { Menu, Sparkles, X } from 'lucide-react'
 import { useState } from 'react'
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     ]
 
     return (
-        <div className="bg-[#553b2b] text-slate-100 selection:bg-[#553b2b]">
+        <div className="bg-[#553b2b] text-slate-100">
             {/* Navbar */}
             <header className="sticky top-0 z-40 border-b border-white/5">
                 <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
@@ -29,7 +29,6 @@ const Header = () => {
                         ))}
                     </nav>
 
-
                     <button
                         className="md:hidden p-2 rounded-lg"
                         onClick={() => setOpen(true)}>
@@ -39,7 +38,7 @@ const Header = () => {
                     {open && (
                         <div className="md:hidden">
                             <div className='fixed bg-black/60' onClick={() => setOpen(false)}>
-                                <div className='fixed right-0 top-0 h-full w-80 bg-[#553b2b] border-l border-white/10 p-6'>
+                                <div className='fixed right-0 top-0 h-full w-60 bg-[#553b2b] border-l border-white/10 p-6'>
                                     <div className="flex items-center justify-between mb-2">
                                         <div className='flex items-center gap-2'>
                                             <Sparkles className='size-6' />

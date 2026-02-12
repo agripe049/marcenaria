@@ -1,7 +1,5 @@
-import { motion } from 'framer-motion'
-import { div } from 'framer-motion/client'
-import { X } from 'lucide-react'
 import Header from './components/Header'
+import Hero from './components/Hero'
 
 
 
@@ -10,6 +8,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Hero />
     </div>
   )
 }
