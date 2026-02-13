@@ -1,4 +1,3 @@
-import React from 'react'
 import { Menu, Sparkles, X } from 'lucide-react'
 import { useState } from 'react'
 
