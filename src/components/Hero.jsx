@@ -1,9 +1,23 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import cozinha from "../../public/cozinha.jpeg"
+import quarto from "../../public/quarto.jpeg"
+import banheiro from "../../public/banheiro.jpeg"
+
 
 const Hero = () => {
+
+    const categorias = [
+        { label: "Cozinha", imagem: cozinha },
+        { label: "Quarto", imagem: quarto },
+        { label: "Banheiro", imagem: banheiro }
+    ];
+
+
+
+
     return (
-        <div className="bg-[#553b2b] text-slate-100 selection:bg-[#553b2b]">
+        <div className="bg-[#1f1f1f] text-slate-100">
             <section className="relative overflow-hidden">
                 <div className='mx-auto max-w-6xl px-4 py-20 relative'>
                     <motion.h1 initial={{ opacity: 0, y: 20 }}
@@ -12,7 +26,7 @@ const Hero = () => {
                         className="text-6xl font-extrabold">
                         Feito à mão para sua casa.{" "}
                         <span className='bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-200'>
-                            Sua casa seu estilo.
+                            Fabricação, Restauração e Reformas.
                         </span>
                     </motion.h1>
 
@@ -20,20 +34,38 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: .5, delay: 1 }}
                         className="mt-4 text-amber-50/80 max-w-2xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sit sequi quae molestias est laborum, distinctio, corrupti
-                        harum cupiditate sapiente facilis ipsa repellat
-                        provident quod maiores rerum eaque dolorem
-                        cumque. Impedit?
+                        Desde 2014 realizando sonhos em forma de móveis. Fazemos a fabricação de
+                        móveis planejados em MDF, Restaurações e Reformas.
                     </motion.p>
                     <motion.div initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: .5, delay: 1 }}
                         className="mt-8 flex flex-row gap-3"
                     >
-                        <a href="#" className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-bold transition bg-amber-500  hover:bg-amber-800'>
-                            Solicitar Orçamento <ArrowRight className='size-6'/>
+                        <a href="#" className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-medium transition bg-amber-500  hover:bg-amber-800'>
+                            Orçamento <ArrowRight className='size-6' />
                         </a>
+                       {/* <a href="#" className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-medium border border-white/10 hover:bg-white/5 transition'>
+                            Ver projetos
+                        </a>*/}
+                    </motion.div>
+
+
+                    <motion.div initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: .5, delay: .7 }}
+                        className="mt-14 grid grid-cols-2 gap-4"
+                    >
+                        {categorias.map((i, label) => (
+                            <div key={label} className='group relative rounded-2xl overflow-hidden bg-[#1f1f1f] aspect-square cursor-pointer'>
+                                <img src={i.imagem} alt={i.label} className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'/>
+                                <div className='absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6'>
+                                    <span className='text-white font-bold text-3xl translate-y-4 group-hover:translate-y-0 transition-transform duration-300'>
+                                        {i.label}
+                                    </span>
+                                </div>
+                            </div>
+                        ))}
 
                     </motion.div>
                 </div>
