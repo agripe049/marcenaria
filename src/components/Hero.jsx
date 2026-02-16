@@ -45,10 +45,12 @@ const Hero = () => {
                         <a href="#" className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-medium transition bg-amber-500  hover:bg-amber-800'>
                             Orçamento <ArrowRight className='size-6' />
                         </a>
-                       {/* <a href="#" className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-medium border border-white/10 hover:bg-white/5 transition'>
+                        {/* <a href="#" className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-medium border border-white/10 hover:bg-white/5 transition'>
                             Ver projetos
                         </a>*/}
                     </motion.div>
+
+
 
 
                     <motion.div initial={{ opacity: 0, y: 20 }}
@@ -57,10 +59,12 @@ const Hero = () => {
                         className="mt-14 grid grid-cols-2 gap-4"
                     >
                         {categorias.map((i, label) => (
-                            <div key={label} className='group relative rounded-2xl overflow-hidden bg-[#1f1f1f] aspect-square cursor-pointer'>
-                                <img src={i.imagem} alt={i.label} className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'/>
-                                <div className='absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6'>
-                                    <span className='text-white font-bold text-3xl translate-y-4 group-hover:translate-y-0 transition-transform duration-300'>
+                            <div key={label} className='group relative rounded-2xl overflow-hidden bg-[#1f1f1f] aspect-square cursor-pointer touch-auto'>
+                                <img src={i.imagem} alt={i.label} className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-active:scale-110' />
+                                <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent 
+                                    opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 
+                                    flex items-end p-6'>
+                                    <span className='text-white font-bold text-lg sm:text-3xl transform translate-y-0 sm:translate-y-4 sm:group-hover:translate-y-0 transition-transform duration-300'>
                                         {i.label}
                                     </span>
                                 </div>
