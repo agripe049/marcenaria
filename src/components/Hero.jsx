@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import cozinha from "../../public/cozinha.jpeg"
 import quarto from "../../public/quarto.jpeg"
 import banheiro from "../../public/banheiro.jpeg"
+import sala from "../../public/sala.jpeg"
 
 
 const Hero = () => {
@@ -10,7 +11,8 @@ const Hero = () => {
     const categorias = [
         { label: "Cozinha", imagem: cozinha },
         { label: "Quarto", imagem: quarto },
-        { label: "Banheiro", imagem: banheiro }
+        { label: "Banheiro", imagem: banheiro },
+        { label: "Sala", imagem: sala }
     ];
 
 
@@ -51,12 +53,21 @@ const Hero = () => {
                     </motion.div>
 
 
+                    <motion.div initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 2 }}
+                        className="mt-15">
+                        <h3 className='text-4xl font-extrabold flex items-center justify-center'>Conheça nossos projetos{" "}</h3>
+                        <p className='mt-4 flex items-center justify-center font-medium'>A união perfeita entre
+                            o uso inteligente do espaço e o estilo que
+                            atravessa gerações.</p>
+                    </motion.div>
 
 
                     <motion.div initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: .5, delay: .7 }}
-                        className="mt-14 grid grid-cols-2 gap-4"
+                        className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4"
                     >
                         {categorias.map((i, label) => (
                             <div key={label} className='group relative rounded-2xl overflow-hidden bg-[#1f1f1f] aspect-square cursor-pointer touch-auto'>
