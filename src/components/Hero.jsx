@@ -15,9 +15,6 @@ const Hero = () => {
         { label: "Sala", imagem: sala }
     ];
 
-
-
-
     return (
         <div className="bg-[#1f1f1f] text-slate-100">
             <section className="relative overflow-hidden">
@@ -52,7 +49,6 @@ const Hero = () => {
                         </a>*/}
                     </motion.div>
 
-
                     <motion.div initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 2 }}
@@ -62,7 +58,6 @@ const Hero = () => {
                             o uso inteligente do espaço e o estilo que
                             atravessa gerações.</p>
                     </motion.div>
-
 
                     <motion.div initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -81,7 +76,6 @@ const Hero = () => {
                                 </div>
                             </div>
                         ))}
-
                     </motion.div>
                 </div>
             </section>
