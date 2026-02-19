@@ -22,13 +22,13 @@ const Features = () => {
                 </h2>
                 <p className='text-slate-300 mt-4 text-center max-w-2xl mx-auto'>Na PSA Planejados, cuidamos de tudo:
                     do projeto à instalação. Com produção
-                    própria e materiais nobres
+                    própria e materiais nobres,
                     entregamos seu sonho com perfeição
                     e pontualidade, sem surpresas.</p>
 
-                <div className='mt-8 grid grid-cols-2 gap-4'>
+                <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {qualidades.map((d, id) => (
-                        <div key={id} className='flex items-center justify-center p-6 bg-[#2a2a2a] border border-white/5 rounded-2xl shadow-xl hover:bg-[#323232] hover:border-amber-50 transition-all duration-500 font-medium text-center text-slate-200 cursor-pointer'>
+                        <div key={id} className='flex items-center justify-center p-5 min-h-[100px] bg-[#2a2a2a] border border-white/5 rounded-2xl shadow-xl hover:bg-[#323232] hover:border-amber-50/50 transition-all duration-500 font-medium text-center text-slate-200 cursor-pointer'>
                             {d.descricao}
                         </div>
                     ))}
