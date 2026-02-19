@@ -22,7 +22,7 @@ const Features = () => {
                 </h2>
                 <p className='text-slate-300 mt-4 text-center max-w-2xl mx-auto'>Na PSA Planejados, cuidamos de tudo:
                     do projeto à instalação. Com produção
-                    própria e materiais nobres,
+                    própria e materiais nobres
                     entregamos seu sonho com perfeição
                     e pontualidade, sem surpresas.</p>
 
