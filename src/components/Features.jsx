@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 const Features = () => {
 
     const qualidades = [
-        { id: 'industria', descricao: "Indústria parceira com controle total de qualidade" },
-        { id: 'projeto-3d', descricao: "Projeto 3D realista antes da produção" },
-        { id: 'instalacao', descricao: "Instalação profissional inclusa" },
-        { id: 'materiais', descricao: "Materiais de alta durabilidade e acabamento premium" }
+        { id: 'industria', descricao: "Padrão superior em cada detalhe" },
+        { id: 'projeto-3d', descricao: "Visualização antecipada em 3D" },
+        { id: 'instalacao', descricao: "Montagem técnica especializada" },
+        { id: 'materiais', descricao: "Produção direta de fábrica" }
     ];
 
 
