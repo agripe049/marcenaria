@@ -1,9 +1,41 @@
-import React from 'react'
+import { Star } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const Testimonials = () => {
+
+  const depoimentos = [
+    { name: "Gabriel Pereira", descricao: "Ótimo serviço, recomendo a todos." },
+    { name: "Fernando da Silva", descricao: "PSA Planejados me atendeu super bem, está aprovado." },
+    { name: "Junior Gomes", descricao: "Serviço com qualidade e feito dentro do prazo." }
+  ]
+
   return (
-    <div>
-        
+    <div className='bg-[#1f1f1f] text-slate-100'>
+      <motion.section id='testimonials' className='mx-auto max-w-6xl px-4 py-20 relative'
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }} // Só anima quando o usuário rolar até aqui
+        viewport={{ once: true }} // Anima apenas uma vez
+        transition={{ duration: 0.8 }}
+      >
+        <h2 className='text-3xl font-bold text-center'>
+          Feedback dos nossos clientes.
+        </h2>
+        <div className='mt-8 grid grid-cols-1 md:grid-cols-3 gap-4'>
+          {[depoimentos.map((n) => (
+            <blockquote
+              key={n.name}
+              className='rounded-2xl border border-white/10 p-6'>
+              <div className='flex items-center gap-2 text-amber-400'>
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className='size-4 fill-current' />
+                ))}
+              </div>
+              <p className='mt-3 text-slate-300'>{n.descricao}</p>
+              <footer className='mt-3 text-sm-text-slate-400'>- {n.name}</footer>
+            </blockquote>
+          ))]}
+        </div>
+      </motion.section>
     </div>
   )
 }

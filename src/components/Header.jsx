@@ -6,15 +6,16 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     const navLinks = [
-        { href: "#", label: "Home" },
         { href: "#projects", label: "Projetos" },
+        { href: "#features", label: "Recursos" },
+        { href: "#testimonials", label: "Feedbacks" },
         { href: "#contact", label: "Contato" }
     ]
 
     return (
-        <div className="bg-[#1f1f1f] text-slate-100">
+        <div className="sticky top-0 z-40 bg-[#1f1f1f] text-slate-100">
             {/* Navbar */}
-            <header className="sticky top-0 z-40 border-b border-white/5">
+            <header className="border-b border-white/5">
                 <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
                     <a href="#" className='flex items-center gap-2'>
                         <span className='font-bold tracking-tight'>PSA Planejados</span>

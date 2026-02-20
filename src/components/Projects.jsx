@@ -19,7 +19,7 @@ const Projects = () => {
     ];
     return (
         <div className='bg-[#1f1f1f] text-slate-100'>
-            <section className='relative overflow-hidden'>
+            <section id='projects' className='relative overflow-hidden'>
                 <div className='mx-auto max-w-6xl px-4 pt-4 pb-20 relative'>
                     <motion.div initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
