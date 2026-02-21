@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, X } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 
 const Hero = () => {
@@ -30,7 +30,7 @@ const Hero = () => {
                         transition={{ duration: .5, delay: 1 }}
                         className="mt-8 flex flex-row gap-3"
                     >
-                        <a href="https://wa.me/5544111111111?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                        <a href="https://wa.me/5544997118089?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
                             className='inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-lg font-medium transition bg-amber-500  hover:bg-amber-800'
                             target="_blank"
                             rel="noopener noreferrer"

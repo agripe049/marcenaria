@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const Features = () => {
 
     const qualidades = [
-        { id: 'industria', descricao: "Padrão superior em cada detalhe" },
+        { id: 'industria', descricao: "Qualidade em cada detalhe" },
         { id: 'projeto-3d', descricao: "Visualização antecipada em 3D" },
         { id: 'instalacao', descricao: "Montagem técnica especializada" },
         { id: 'materiais', descricao: "Produção direta de fábrica" }

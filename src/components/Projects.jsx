@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowRight, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import cozinha from "../../public/cozinha.jpeg"
 import quarto from "../../public/quarto.jpeg"
 import banheiro from "../../public/banheiro.jpeg"
@@ -12,10 +12,10 @@ const Projects = () => {
     const [projetoSelecionado, setProjetoSelecionado] = useState(null);
 
     const categorias = [
-        { label: "Cozinha", imagem: cozinha, descricao: "Cozinhas planejadas com aproveitamento inteligente de cada centímetro." },
-        { label: "Quarto", imagem: quarto, descricao: "Dormitórios que unem conforto térmico e organização impecável." },
-        { label: "Banheiro", imagem: banheiro, descricao: "Gabinetes e detalhes que transformam seu banheiro em um spa particular." },
-        { label: "Sala", imagem: sala, descricao: "Painéis e mobiliário para criar o ambiente perfeito de convivência." }
+        { label: "Cozinhas", imagem: cozinha, descricao: "Cozinhas planejadas com aproveitamento inteligente de cada centímetro." },
+        { label: "Quartos", imagem: quarto, descricao: "Dormitórios que unem conforto térmico e organização impecável." },
+        { label: "Banheiros", imagem: banheiro, descricao: "Gabinetes e detalhes que transformam seu banheiro em um spa particular." },
+        { label: "Salas", imagem: sala, descricao: "Painéis e mobiliário para criar o ambiente perfeito de convivência." }
     ];
     return (
         <div className='bg-[#1f1f1f] text-slate-100'>
@@ -87,7 +87,7 @@ const Projects = () => {
                                 <div className='md:w-2/5 p-8 flex flex-col justify-center'>
                                     <h3 className='text-3xl font-bold'>{projetoSelecionado.label}</h3>
                                     <p className='text-slate-400 mt-4'>{projetoSelecionado.descricao}</p>
-                                    <a href={`https://wa.me/5544999999999?text=Olá! Vi o projeto de ${projetoSelecionado?.label} no seu site e gostaria de um orçamento parecido.`}
+                                    <a href={`https://wa.me/5544997118089?text=Olá! Vi o projeto de ${projetoSelecionado?.label} no seu site e gostaria de um orçamento parecido.`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         onClick={(e) => e.stopPropagation()} // Impede conflitos com o fundo do modal 
