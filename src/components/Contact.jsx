@@ -19,9 +19,12 @@ const Contact = () => {
 
           {/* Coluna sobre */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-200">PSA Planejados</h3>
-            <p className="text-slate-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati nisi quas doloremque similique.</p>
+            <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-200">
+              PSA Planejados
+            </h3>
+            <p className="text-slate-400 leading-relaxed">
+              Móveis sob medida de alto padrão. Unimos técnica e personalidade para criar ambientes exclusivos com o máximo de conforto e sofisticação.
+            </p>
           </div>
 
           {/* Navegação */}
