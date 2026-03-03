@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
-
-// Importações mantidas
 import cozinha from "../../public/cozinha.jpeg"
 import cozinha2 from "../../public/cozinha2.jpeg"
 import cozinha3 from "../../public/cozinha3.jpeg"
@@ -12,6 +10,11 @@ import cozinha6 from "../../public/cozinha6.jpeg"
 import cozinha7 from "../../public/cozinha7.jpeg"
 import cozinha8 from "../../public/cozinha8.jpeg"
 import quarto from "../../public/quarto.jpeg"
+import quarto2 from "../../public/quarto2.jpeg"
+import quarto3 from "../../public/quarto3.jpeg"
+import quarto4 from "../../public/quarto4.jpeg"
+import quarto5 from "../../public/quarto5.jpeg"
+import quarto6 from "../../public/quarto6.jpeg"
 import banheiro from "../../public/banheiro.jpeg"
 import sala from "../../public/sala.jpeg"
 
@@ -27,7 +30,7 @@ const Projects = () => {
         },
         {
             label: "Quartos",
-            imagens: [quarto],
+            imagens: [quarto, quarto2, quarto3, quarto4, quarto5, quarto6],
             descricao: "Dormitórios que unem conforto térmico e organização impecável."
         },
         {
