@@ -5,18 +5,18 @@ import cozinha from "../../public/cozinha.jpeg"
 import cozinha2 from "../../public/cozinha2.jpeg"
 import cozinha3 from "../../public/cozinha3.jpeg"
 import cozinha4 from "../../public/cozinha4.jpeg"
-import cozinha5 from "../../public/cozinha5.jpeg"
-import cozinha6 from "../../public/cozinha6.jpeg"
-import cozinha7 from "../../public/cozinha7.jpeg"
-import cozinha8 from "../../public/cozinha8.jpeg"
 import quarto from "../../public/quarto.jpeg"
 import quarto2 from "../../public/quarto2.jpeg"
 import quarto3 from "../../public/quarto3.jpeg"
 import quarto4 from "../../public/quarto4.jpeg"
-import quarto5 from "../../public/quarto5.jpeg"
-import quarto6 from "../../public/quarto6.jpeg"
 import banheiro from "../../public/banheiro.jpeg"
+import banheiro2 from "../../public/banheiro2.png"
+import banheiro3 from "../../public/banheiro3.jpg"
+import banheiro4 from "../../public/banheiro4.png"
 import sala from "../../public/sala.jpeg"
+import sala2 from "../../public/sala2.jpeg"
+import sala3 from "../../public/sala3.jpeg"
+import sala4 from "../../public/sala4.png"
 
 const Projects = () => {
     const [projetoSelecionado, setProjetoSelecionado] = useState(null);
@@ -25,22 +25,22 @@ const Projects = () => {
     const categorias = [
         {
             label: "Cozinhas",
-            imagens: [cozinha, cozinha2, cozinha3, cozinha4, cozinha5, cozinha6, cozinha7, cozinha8],
+            imagens: [cozinha, cozinha2, cozinha3, cozinha4],
             descricao: "Cozinhas planejadas com aproveitamento inteligente de cada centímetro."
         },
         {
             label: "Quartos",
-            imagens: [quarto, quarto2, quarto3, quarto4, quarto5, quarto6],
-            descricao: "Dormitórios que unem conforto térmico e organização impecável."
+            imagens: [quarto, quarto2, quarto3, quarto4],
+            descricao: "Roupeiros e closets sob medida que transformam organização em sofisticação, aproveitando cada milímetro do seu dormitório."
         },
         {
             label: "Banheiros",
-            imagens: [banheiro],
+            imagens: [banheiro, banheiro2, banheiro3, banheiro4],
             descricao: "Gabinetes e detalhes que transformam seu banheiro em um spa particular."
         },
         {
             label: "Salas",
-            imagens: [sala],
+            imagens: [sala, sala2, sala3, sala4],
             descricao: "Painéis e mobiliário para criar o ambiente perfeito de convivência."
         }
     ];
