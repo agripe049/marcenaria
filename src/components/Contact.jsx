@@ -1,4 +1,4 @@
-import { Clock4, MapPin, Phone } from "lucide-react"
+import { Clock4, MapPin, Phone, Instagram } from "lucide-react"
 
 
 const Contact = () => {
@@ -42,7 +42,17 @@ const Contact = () => {
           {/* Contatos */}
           <div className="flex flex-col gap-4">
             <h3 className="text-xl font-bold">Contatos</h3>
-            <div className="flex flex-col gap-4 text-slate-400">
+            <div className="flex flex-col gap-5 text-slate-400">
+
+                <a
+                  href="https://www.instagram.com/psaplanejados/" // Coloque o seu link aqui
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-3 transition-all duration-300"
+                >
+                    <Instagram className="size-6 text-amber-500" />
+                  <span className="text-sm">@psaplanejados</span>
+                </a>
 
               {/* Telefone */}
               <div className="flex items-center gap-3">

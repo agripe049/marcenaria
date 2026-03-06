@@ -18,7 +18,7 @@ const Header = () => {
             <header className="border-b border-white/5">
                 <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
                     <a href="#" className='flex items-center gap-2'>
-                        <span className='font-bold tracking-tight'>PSA Planejados</span>
+                        <span className='text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-200'>PSA Planejados</span>
                     </a>
                     <nav className='hidden md:flex items-center gap-6 text-sm'>
                         {navLinks.map((l) => (
@@ -41,8 +41,7 @@ const Header = () => {
                                 <div className='fixed right-0 top-0 h-full w-60 bg-[#1f1f1f] border-l border-white/10 p-6'>
                                     <div className="flex items-center justify-between mb-2">
                                         <div className='flex items-center gap-2'>
-                                            <Sparkles className='size-6' />
-                                            <span className='font-semibold'>PSA Planejados</span>
+                                            <span className='font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-200'>PSA Planejados</span>
                                         </div>
                                         <button className="p-2 rounded-lg" onClick={() => setOpen(false)}>
                                             <X className='size-5' />
