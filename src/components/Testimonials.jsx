@@ -8,7 +8,7 @@ const Testimonials = () => {
     { name: "Excelência no Atendimento", descricao: "A satisfação de quem confia no nosso trabalho é o que nos move. Acompanhe em breve os feedbacks dos nossos parceiros." },
     { name: "Projetos de Alto Padrão", descricao: "Cada detalhe é planejado com exclusividade. Em breve, você poderá ler aqui os relatos de transformações nos lares de nossos clientes." }
   ]
-
+  // Projeto finalizado
   return (
     <div className='bg-[#1f1f1f] text-slate-100'>
       <motion.section id='testimonials' className='mx-auto max-w-6xl px-4 py-20 relative'
