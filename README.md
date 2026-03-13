@@ -1,16 +1,53 @@
-# React + Vite
+# 🛋️ PSA Planejados - Landing Page de Alto Padrão
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório oficial da landing page da **PSA Planejados**, desenvolvida para apresentar móveis sob medida com foco em sofisticação, organização e design moderno.
 
-Currently, two official plugins are available:
+🔗 **Visualizar Projeto Online:** [https://marcenaria-omega.vercel.app/](https://marcenaria-omega.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📋 Sobre o Projeto
 
-## Expanding the ESLint configuration
+O projeto consiste em uma landing page profissional para uma marcenaria de alto padrão. O desafio técnico foi criar uma interface que equilibrasse uma estética luxuosa (Dark Mode com acentos em dourado) com uma performance veloz e total responsividade.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O site foi desenvolvido de forma modular, permitindo fácil manutenção e expansão de conteúdo.
+
+## ✨ Funcionalidades Principais
+
+- 📱 **Mobile First:** Navegação otimizada para smartphones com menu lateral (Drawer).
+- 🖼️ **Showcase de Projetos:** Galeria de imagens organizada por categorias (Cozinhas, Dormitórios, Banheiros).
+- ⚡ **Performance:** Imagens e componentes otimizados para carregamento rápido.
+- 💬 **Conversão Direta:** Botões estratégicos de chamada para o WhatsApp da empresa.
+- 🎭 **Animações Declarativas:** Transições suaves de entrada utilizando Framer Motion.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React.js** (Vite)
+- **Tailwind CSS** (Estilização)
+- **Lucide React** (Ícones)
+- **Framer Motion** (Animações)
+- **Vercel** (Deploy e Hospedagem)
+
+---
+
+## 🚀 Como Clonar e Executar
+
+Se desejar testar o projeto localmente, siga os passos abaixo:
+
+```bash
+# 1. Clone o repositório
+git clone [https://github.com/agripe049/marcenaria.git](https://github.com/agripe049/marcenaria.git)
+
+# 2. Entre no diretório
+cd marcenaria
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor local
+npm run dev
