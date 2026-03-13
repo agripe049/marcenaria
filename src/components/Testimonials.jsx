@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 const Testimonials = () => {
 
   const depoimentos = [
-    { name: "Gabriel Pereira", descricao: "Ótimo serviço, recomendo a todos." },
-    { name: "Fernando da Silva", descricao: "PSA Planejados me atendeu super bem, está aprovado." },
-    { name: "Junior Gomes", descricao: "Serviço com qualidade e feito dentro do prazo." }
+    { name: "Compromisso com Qualidade", descricao: "Estamos preparando esta seção para compartilhar as experiências reais dos nossos clientes. Em breve, novos depoimentos aqui." },
+    { name: "Excelência no Atendimento", descricao: "A satisfação de quem confia no nosso trabalho é o que nos move. Acompanhe em breve os feedbacks dos nossos parceiros." },
+    { name: "Projetos de Alto Padrão", descricao: "Cada detalhe é planejado com exclusividade. Em breve, você poderá ler aqui os relatos de transformações nos lares de nossos clientes." }
   ]
 
   return (
@@ -18,10 +18,13 @@ const Testimonials = () => {
         transition={{ duration: 0.8 }}
       >
         <h2 className='text-3xl font-bold text-center'>
-          Feedback dos nossos clientes.
+          O que dizem sobre nós
         </h2>
+        <p className='text-center text-slate-400 mt-2 text-sm italic'>
+          Seção em atualização com depoimentos reais
+        </p>
         <div className='mt-8 grid grid-cols-1 md:grid-cols-3 gap-4'>
-          {[depoimentos.map((n) => (
+          {depoimentos.map((n) => (
             <blockquote
               key={n.name}
               className='rounded-2xl border border-white/10 p-6'>
@@ -30,10 +33,10 @@ const Testimonials = () => {
                   <Star key={i} className='size-4 fill-current' />
                 ))}
               </div>
-              <p className='mt-3 text-slate-300'>{n.descricao}</p>
+              <p className='mt-3 text-slate-300'>"{n.descricao}"</p>
               <footer className='mt-3 text-sm-text-slate-400'>- {n.name}</footer>
             </blockquote>
-          ))]}
+          ))}
         </div>
       </motion.section>
     </div>
